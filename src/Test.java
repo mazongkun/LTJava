@@ -10,7 +10,7 @@ public class Test {
             int num = Math.abs(random.nextInt() % 30);
             deque.offer(num);
             deque2.offerLast(num);
-            deque.offerFirst()
+//            deque.offerFirst()
         }
 
         System.out.println(deque);

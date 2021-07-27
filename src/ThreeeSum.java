@@ -77,7 +77,7 @@ public class ThreeeSum {
                     // sum < 0，则left右移
                     left++;
                 } else if (sum > 0) {
-                    // sum < 0，则right左移
+                    // sum > 0，则right左移
                     right--;
                 } else {
                     // sum == 0, add to list

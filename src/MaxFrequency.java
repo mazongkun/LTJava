@@ -56,7 +56,7 @@ public class MaxFrequency {
             // 每多一个频次的数，所有从下标left开始到right的数都得增加，因此需要乘(right-left)
             total += (nums[right] - nums[right-1]) * (right-left);
             while (total > k) {
-                // 去掉最大步长的所有数，并将left向左偏移
+                // 去掉最大步长的所有数，并将left向右偏移
                 total -= nums[right] - nums[left];
                 left++;
             }

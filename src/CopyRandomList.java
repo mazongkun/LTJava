@@ -55,7 +55,7 @@ import java.util.List;
 public class CopyRandomList {
 
     // Definition for a Node.
-    static class Node {
+    private static class Node {
         int val;
         Node next;
         Node random;
@@ -67,7 +67,7 @@ public class CopyRandomList {
         }
     }
 
-    static Node copyRandomList(Node head) {
+    private static Node copyRandomList(Node head) {
         if (head == null) {
             return null;
         }
@@ -110,8 +110,8 @@ public class CopyRandomList {
     }
 
     // 回溯+哈希
-    static HashMap<Node, Node> map = new HashMap<>();
-    static Node copyRandomList2(Node head) {
+    private static HashMap<Node, Node> map = new HashMap<>();
+    private static Node copyRandomList2(Node head) {
         if (head == null)
             return null;
         // 检查是否已存在，若已经存在则直接返回

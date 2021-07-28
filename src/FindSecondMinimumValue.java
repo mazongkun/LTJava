@@ -30,7 +30,7 @@
  */
 public class FindSecondMinimumValue {
 
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -47,9 +47,9 @@ public class FindSecondMinimumValue {
 
     }
 
-    static int secondMinimum;
-    static int rootVal;
-    static int findSecondMinimumValue(TreeNode root) {
+    private static int secondMinimum;
+    private static int rootVal;
+    private static int findSecondMinimumValue(TreeNode root) {
         secondMinimum = -1;
         rootVal = root.val;
         dfs(root);
@@ -57,7 +57,7 @@ public class FindSecondMinimumValue {
     }
 
     // 深度优先搜索
-    static void dfs(TreeNode node) {
+    private static void dfs(TreeNode node) {
         if (node == null) {
             return;
         }

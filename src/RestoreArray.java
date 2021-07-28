@@ -52,7 +52,7 @@ public class RestoreArray {
         }
     }
 
-    static int[] restoreArray2(int[][] adjacentPairs) {
+    private static int[] restoreArray2(int[][] adjacentPairs) {
         // 遍历每个数key，将与key相邻的数放进map
         HashMap<Integer, List<Integer>> map = new HashMap<>();
         for (int[] pair: adjacentPairs) {
@@ -91,7 +91,7 @@ public class RestoreArray {
         return arr;
     }
 
-    static int[] restoreArray(int[][] adjacentPairs) {
+    private static int[] restoreArray(int[][] adjacentPairs) {
         HashMap<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
         for (int i=0; i<adjacentPairs.length; i++) {
             for (int key: adjacentPairs[i]) {

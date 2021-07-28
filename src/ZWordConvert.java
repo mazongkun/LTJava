@@ -44,7 +44,7 @@ public class ZWordConvert {
         System.out.println(zWordConvert("A", 1));
     }
 
-    static String zWordConvert(String s, int numRows) {
+    private static String zWordConvert(String s, int numRows) {
         if (numRows == 1 || s.length() == 1) {
             return s;
         }

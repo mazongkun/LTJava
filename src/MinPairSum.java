@@ -43,7 +43,7 @@ public class MinPairSum {
         System.out.println(sum);
     }
 
-    static int minPairSum(int[] nums) {
+    private static int minPairSum(int[] nums) {
         // 排序
         Arrays.sort(nums);
 

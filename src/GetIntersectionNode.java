@@ -54,7 +54,7 @@ public class GetIntersectionNode {
     /**
      * Definition for singly-linked list.
      */
-    public class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
         ListNode(int x) {
@@ -63,7 +63,7 @@ public class GetIntersectionNode {
         }
     }
 
-    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+    private ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         // 1、将A中所有node放入set中；
         ListNode node = headA;
         Set<ListNode> set = new HashSet<>();
@@ -82,7 +82,7 @@ public class GetIntersectionNode {
         return null;
     }
 
-    public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
+    private ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) {
             return null;
         }

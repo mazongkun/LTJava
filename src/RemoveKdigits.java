@@ -38,7 +38,7 @@ public class RemoveKdigits {
      * @param k
      * @return
      */
-    static String removeKdigits(String num, int k) {
+    private static String removeKdigits(String num, int k) {
         Deque<Character> deque = new LinkedList<>();
         // 创建一个单调栈（使用双向列表实现）
         // 遍历，依次比较当前数字与其左侧的数字，若左侧数字大，则删掉左侧数字

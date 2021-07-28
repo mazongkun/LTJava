@@ -31,7 +31,7 @@ import java.util.List;
  */
 public class AddTwoNumbers {
 
-    public static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
         ListNode() {}
@@ -44,7 +44,7 @@ public class AddTwoNumbers {
     }
 
 
-    static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode result = null;
 
         boolean needAdd = false; // 是否需要进1

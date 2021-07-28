@@ -40,7 +40,7 @@ public class IsPalindrome {
         System.out.println("isPalindrome: " + isPalindrome(x));
     }
 
-    static boolean isPalindrome(int x) {
+    private static boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
         }

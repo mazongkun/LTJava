@@ -43,7 +43,7 @@ public class MaxFrequency {
     }
 
     // 排序 + 滑动窗口
-    static int maxFrequency(int[] nums, int k) {
+    private static int maxFrequency(int[] nums, int k) {
         int frequency = 1;
 
         // 先排序为递增数组
@@ -69,7 +69,7 @@ public class MaxFrequency {
     }
 
     // 自己实现的方案，但会超时
-    static int maxFrequency2(int[] nums, int k) {
+    private static int maxFrequency2(int[] nums, int k) {
         int frequency = 1;
 
         Arrays.sort(nums);

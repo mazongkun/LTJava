@@ -42,7 +42,7 @@ public class IsCovered {
         System.out.println("isCovered: " + isCovered(ranges, left, right));
     }
 
-    static boolean isCovered(int[][] ranges, int left, int right) {
+    private static boolean isCovered(int[][] ranges, int left, int right) {
         // 从left到right遍历，检查每个数
         int cur = left;
         while (cur <= right) {

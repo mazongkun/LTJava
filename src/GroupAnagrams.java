@@ -26,7 +26,7 @@ public class GroupAnagrams {
 
     }
 
-    static List<List<String>> groupAnagrams2(String[] strs) {
+    private static List<List<String>> groupAnagrams2(String[] strs) {
         List<List<String>> result = new ArrayList<>();
         Map<String, List<String>> map = new HashMap<>();
 
@@ -51,7 +51,7 @@ public class GroupAnagrams {
         return result;
     }
 
-    static List<List<String>> groupAnagrams(String[] strs) {
+    private static List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> result = new ArrayList<>();
         Set<String> keys = new HashSet<>();
         Map<String, List<String>> map = new HashMap<>();

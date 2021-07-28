@@ -23,7 +23,7 @@ public class MaxSubArray {
         System.out.println(maxSubArray(arr));
     }
 
-    static int maxSubArray(int[] nums) {
+    private static int maxSubArray(int[] nums) {
         int pre = 0;
         int maxSum = nums[0];
 

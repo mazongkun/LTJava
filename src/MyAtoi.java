@@ -94,7 +94,7 @@ public class MyAtoi {
         System.out.println("myAtoi: " + myAtoi(s));
     }
 
-    static int myAtoi(String s) {
+    private static int myAtoi(String s) {
         long lResult = 0;
         char[] arr = s.toCharArray();
         int sign = 1;

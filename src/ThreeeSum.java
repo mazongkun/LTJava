@@ -46,7 +46,7 @@ public class ThreeeSum {
         System.out.println("time: " + time + "ms");
     }
 
-    static List<List<Integer>> threeSum2(int[] nums) {
+    private static List<List<Integer>> threeSum2(int[] nums) {
         int length = nums.length;
         List<List<Integer>> result = new ArrayList<>();
         // 排序
@@ -94,7 +94,7 @@ public class ThreeeSum {
         return result;
     }
 
-    static List<List<Integer>> threeSum(int[] nums) {
+    private static List<List<Integer>> threeSum(int[] nums) {
         int length = nums.length;
         List<List<Integer>> result = new ArrayList<>();
         if (length < 3) {

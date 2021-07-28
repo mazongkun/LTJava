@@ -34,7 +34,7 @@ public class MaximumTime {
         System.out.println(maximumTime(time));
     }
 
-    static String maximumTime(String time) {
+    private static String maximumTime(String time) {
         char[] arr = time.toCharArray();
         if (arr[0] == '?' && arr[1] == '?') {
             arr[0] = '2';
